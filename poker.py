@@ -1,6 +1,42 @@
 import random
 
 
+def one_pair():         # Jack or better, returns boolean
+    pass
+
+
+def two_pair():
+    pass
+
+
+def three_of_a_kind():
+    pass
+
+
+def straight():
+    pass
+
+
+def flush():
+    pass
+
+
+def full_house():
+    pass
+
+
+def four_of_a_kind():
+    pass
+
+
+def straight_flush():
+    pass
+
+
+def royal_flush():
+    pass
+
+
 def card_generator():           # creates card dictionary
     s_a = {"face": "🂡", "value": 1}
     s_2 = {"face": "🂢", "value": 2}
