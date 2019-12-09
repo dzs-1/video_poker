@@ -112,7 +112,7 @@ def hold():
 
 def deal(cards):                # deals 5 unique cards
     dealt_cards = []
-    for i in range(5):
+    while len(dealt_cards) != 5:
         current_card = random.choice(cards)
         if current_card not in dealt_cards:
             dealt_cards.append(current_card)
