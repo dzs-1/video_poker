@@ -102,8 +102,12 @@ def card_generator():           # creates card dictionary
     return cards
 
 
-# def hand_check(hand):
-#     for card in hand:
+def win_check():            # checks all the winning conditions
+    pass
+
+
+def hold():
+    pass
 
 
 def deal(cards):                # deals 5 unique cards
