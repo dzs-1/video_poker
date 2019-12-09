@@ -66,10 +66,6 @@ def card_generator():
     return cards
 
 
-# def hand_check(hand):
-#     for card in hand:
-
-
 def deal(cards):
     dealt_cards = []
     for i in range(5):
@@ -84,3 +80,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
