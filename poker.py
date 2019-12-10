@@ -141,12 +141,15 @@ def main():
     deck = cards()
     hand = deal(deck, hold_list)
     for card in hand:
-        print(card["face"])
+        print(card["face"], end=" ")
+    print("\n")
     one_pair(hand)
     while True:
         new_hand = hold(hand, deck)
+        print("\n")
         for card in new_hand:
-            print(card["face"])
+            print(card["face"], end=" ")
+        print("\n")
         one_pair(hand)
 
 
