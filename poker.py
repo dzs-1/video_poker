@@ -1,4 +1,5 @@
 import random
+import os
 
 
 def one_pair(hand):         # Jack or better, returns boolean
@@ -49,33 +50,33 @@ def royal_flush():
 
 
 def cards():           # creates card dictionary
-    s_a = {"face": "\033[1;31;49m🂡\033[0m", "value": 1, "color": "spades"}
-    s_2 = {"face": "\033[1;31;49m🂢\033[0m", "value": 2, "color": "spades"}
-    s_3 = {"face": "\033[1;31;49m🂣\033[0m", "value": 3, "color": "spades"}
-    s_4 = {"face": "\033[1;31;49m🂤\033[0m", "value": 4, "color": "spades"}
-    s_5 = {"face": "\033[1;31;49m🂥\033[0m", "value": 5, "color": "spades"}
-    s_6 = {"face": "\033[1;31;49m🂦\033[0m", "value": 6, "color": "spades"}
-    s_7 = {"face": "\033[1;31;49m🂧\033[0m", "value": 7, "color": "spades"}
-    s_8 = {"face": "\033[1;31;49m🂨\033[0m", "value": 8, "color": "spades"}
-    s_9 = {"face": "\033[1;31;49m🂩\033[0m", "value": 9, "color": "spades"}
-    s_10 = {"face": "\033[1;31;49m🂪\033[0m", "value": 10, "color": "spades"}
-    s_j = {"face": "\033[1;31;49m🂫\033[0m", "value": 11, "color": "spades"}
-    s_q = {"face": "\033[1;31;49m🂭\033[0m", "value": 12, "color": "spades"}
-    s_k = {"face": "\033[1;31;49m🂮\033[0m", "value": 13, "color": "spades"}
+    s_a = {"face": "\033[1;32;49m🂡\033[0m", "value": 1, "color": "spades"}
+    s_2 = {"face": "\033[1;32;49m🂢\033[0m", "value": 2, "color": "spades"}
+    s_3 = {"face": "\033[1;32;49m🂣\033[0m", "value": 3, "color": "spades"}
+    s_4 = {"face": "\033[1;32;49m🂤\033[0m", "value": 4, "color": "spades"}
+    s_5 = {"face": "\033[1;32;49m🂥\033[0m", "value": 5, "color": "spades"}
+    s_6 = {"face": "\033[1;32;49m🂦\033[0m", "value": 6, "color": "spades"}
+    s_7 = {"face": "\033[1;32;49m🂧\033[0m", "value": 7, "color": "spades"}
+    s_8 = {"face": "\033[1;32;49m🂨\033[0m", "value": 8, "color": "spades"}
+    s_9 = {"face": "\033[1;32;49m🂩\033[0m", "value": 9, "color": "spades"}
+    s_10 = {"face": "\033[1;32;49m🂪\033[0m", "value": 10, "color": "spades"}
+    s_j = {"face": "\033[1;32;49m🂫\033[0m", "value": 11, "color": "spades"}
+    s_q = {"face": "\033[1;32;49m🂭\033[0m", "value": 12, "color": "spades"}
+    s_k = {"face": "\033[1;32;49m🂮\033[0m", "value": 13, "color": "spades"}
 
-    h_a = {"face": "\033[1;32;49m🂱\033[0m", "value": 1, "color": "hearts"}
-    h_2 = {"face": "\033[1;32;49m🂲\033[0m", "value": 2, "color": "hearts"}
-    h_3 = {"face": "\033[1;32;49m🂳\033[0m", "value": 3, "color": "hearts"}
-    h_4 = {"face": "\033[1;32;49m🂴\033[0m", "value": 4, "color": "hearts"}
-    h_5 = {"face": "\033[1;32;49m🂵\033[0m", "value": 5, "color": "hearts"}
-    h_6 = {"face": "\033[1;32;49m🂶\033[0m", "value": 6, "color": "hearts"}
-    h_7 = {"face": "\033[1;32;49m🂷\033[0m", "value": 7, "color": "hearts"}
-    h_8 = {"face": "\033[1;32;49m🂸\033[0m", "value": 8, "color": "hearts"}
-    h_9 = {"face": "\033[1;32;49m🂹\033[0m", "value": 9, "color": "hearts"}
-    h_10 = {"face": "\033[1;32;49m🂺\033[0m", "value": 10, "color": "hearts"}
-    h_j = {"face": "\033[1;32;49m🂻\033[0m", "value": 11, "color": "hearts"}
-    h_q = {"face": "\033[1;32;49m🂽\033[0m", "value": 12, "color": "hearts"}
-    h_k = {"face": "\033[1;32;49m🂾\033[0m", "value": 13, "color": "hearts"}
+    h_a = {"face": "\033[1;31;49m🂱\033[0m", "value": 1, "color": "hearts"}
+    h_2 = {"face": "\033[1;31;49m🂲\033[0m", "value": 2, "color": "hearts"}
+    h_3 = {"face": "\033[1;31;49m🂳\033[0m", "value": 3, "color": "hearts"}
+    h_4 = {"face": "\033[1;31;49m🂴\033[0m", "value": 4, "color": "hearts"}
+    h_5 = {"face": "\033[1;31;49m🂵\033[0m", "value": 5, "color": "hearts"}
+    h_6 = {"face": "\033[1;31;49m🂶\033[0m", "value": 6, "color": "hearts"}
+    h_7 = {"face": "\033[1;31;49m🂷\033[0m", "value": 7, "color": "hearts"}
+    h_8 = {"face": "\033[1;31;49m🂸\033[0m", "value": 8, "color": "hearts"}
+    h_9 = {"face": "\033[1;31;49m🂹\033[0m", "value": 9, "color": "hearts"}
+    h_10 = {"face": "\033[1;31;49m🂺\033[0m", "value": 10, "color": "hearts"}
+    h_j = {"face": "\033[1;31;49m🂻\033[0m", "value": 11, "color": "hearts"}
+    h_q = {"face": "\033[1;31;49m🂽\033[0m", "value": 12, "color": "hearts"}
+    h_k = {"face": "\033[1;31;49m🂾\033[0m", "value": 13, "color": "hearts"}
 
     d_a = {"face": "\033[1;33;49m🃁\033[0m", "value": 1, "color": "diamonds"}
     d_2 = {"face": "\033[1;33;49m🃂\033[0m", "value": 2, "color": "diamonds"}
@@ -147,6 +148,7 @@ def main():
     while True:
         new_hand = hold(hand, deck)
         print("\n")
+        os.system("clear")
         for card in new_hand:
             print(card["face"], end=" ")
         print("\n")
