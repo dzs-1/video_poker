@@ -2,13 +2,18 @@ import random
 
 
 def one_pair(hand):         # Jack or better, returns boolean
+    pairs = []
     for i in range(4):
         first_card = hand[i]
         for j in range(1, 5):
             second_card = hand[j]
             if i != j:
                 if first_card["value"] == second_card["value"]:
-                    print("ONE PAIR")
+                    if first_card not in pairs:
+                        if first_card["value"] >= 11 or first_card["value"] == 1:
+                            pairs.append(first_card)
+                            pairs.append(second_card)
+                            print("ONE PAIR")
 
 
 def two_pair():
