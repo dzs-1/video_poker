@@ -38,61 +38,61 @@ def royal_flush():
 
 
 def cards():           # creates card dictionary
-    s_a = {"face": "\033[1;31;40m🂡\033", "value": 1, "color": "spades"}
-    s_2 = {"face": "\033[1;31;40m🂢\033", "value": 2, "color": "spades"}
-    s_3 = {"face": "\033[1;31;40m🂣\033", "value": 3, "color": "spades"}
-    s_4 = {"face": "\033[1;31;40m🂤\033", "value": 4, "color": "spades"}
-    s_5 = {"face": "\033[1;31;40m🂥\033", "value": 5, "color": "spades"}
-    s_6 = {"face": "\033[1;31;40m🂦\033", "value": 6, "color": "spades"}
-    s_7 = {"face": "\033[1;31;40m🂧\033", "value": 7, "color": "spades"}
-    s_8 = {"face": "\033[1;31;40m🂨\033", "value": 8, "color": "spades"}
-    s_9 = {"face": "\033[1;31;40m🂩\033", "value": 9, "color": "spades"}
-    s_10 = {"face": "\033[1;31;40m🂪\033", "value": 10, "color": "spades"}
-    s_j = {"face": "\033[1;31;40m🂫\033", "value": 11, "color": "spades"}
-    s_q = {"face": "\033[1;31;40m🂭\033", "value": 12, "color": "spades"}
-    s_k = {"face": "\033[1;31;40m🂮\033", "value": 13, "color": "spades"}
+    s_a = {"face": "\033[1;31;1m🂡\033", "value": 1, "color": "spades"}
+    s_2 = {"face": "\033[1;31;49m🂢\033", "value": 2, "color": "spades"}
+    s_3 = {"face": "\033[1;31;49m🂣\033", "value": 3, "color": "spades"}
+    s_4 = {"face": "\033[1;31;49m🂤\033", "value": 4, "color": "spades"}
+    s_5 = {"face": "\033[1;31;49m🂥\033", "value": 5, "color": "spades"}
+    s_6 = {"face": "\033[1;31;49m🂦\033", "value": 6, "color": "spades"}
+    s_7 = {"face": "\033[1;31;49m🂧\033", "value": 7, "color": "spades"}
+    s_8 = {"face": "\033[1;31;49m🂨\033", "value": 8, "color": "spades"}
+    s_9 = {"face": "\033[1;31;49m🂩\033", "value": 9, "color": "spades"}
+    s_10 = {"face": "\033[1;31;49m🂪\033", "value": 10, "color": "spades"}
+    s_j = {"face": "\033[1;31;49m🂫\033", "value": 11, "color": "spades"}
+    s_q = {"face": "\033[1;31;49m🂭\033", "value": 12, "color": "spades"}
+    s_k = {"face": "\033[1;31;49m🂮\033", "value": 13, "color": "spades"}
 
-    h_a = {"face": "\033[1;32;40m🂱\033", "value": 1, "color": "hearts"}
-    h_2 = {"face": "\033[1;32;40m🂲\033", "value": 2, "color": "hearts"}
-    h_3 = {"face": "\033[1;32;40m🂳\033", "value": 3, "color": "hearts"}
-    h_4 = {"face": "\033[1;32;40m🂴\033", "value": 4, "color": "hearts"}
-    h_5 = {"face": "\033[1;32;40m🂵\033", "value": 5, "color": "hearts"}
-    h_6 = {"face": "\033[1;32;40m🂶\033", "value": 6, "color": "hearts"}
-    h_7 = {"face": "\033[1;32;40m🂷\033", "value": 7, "color": "hearts"}
-    h_8 = {"face": "\033[1;32;40m🂸\033", "value": 8, "color": "hearts"}
-    h_9 = {"face": "\033[1;32;40m🂹\033", "value": 9, "color": "hearts"}
-    h_10 = {"face": "\033[1;32;40m🂺\033", "value": 10, "color": "hearts"}
-    h_j = {"face": "\033[1;32;40m🂻\033", "value": 11, "color": "hearts"}
-    h_q = {"face": "\033[1;32;40m🂽\033", "value": 12, "color": "hearts"}
-    h_k = {"face": "\033[1;32;40m🂾\033", "value": 13, "color": "hearts"}
+    h_a = {"face": "\033[1;32;49m🂱\033", "value": 1, "color": "hearts"}
+    h_2 = {"face": "\033[1;32;49m🂲\033", "value": 2, "color": "hearts"}
+    h_3 = {"face": "\033[1;32;49m🂳\033", "value": 3, "color": "hearts"}
+    h_4 = {"face": "\033[1;32;49m🂴\033", "value": 4, "color": "hearts"}
+    h_5 = {"face": "\033[1;32;49m🂵\033", "value": 5, "color": "hearts"}
+    h_6 = {"face": "\033[1;32;49m🂶\033", "value": 6, "color": "hearts"}
+    h_7 = {"face": "\033[1;32;49m🂷\033", "value": 7, "color": "hearts"}
+    h_8 = {"face": "\033[1;32;49m🂸\033", "value": 8, "color": "hearts"}
+    h_9 = {"face": "\033[1;32;49m🂹\033", "value": 9, "color": "hearts"}
+    h_10 = {"face": "\033[1;32;49m🂺\033", "value": 10, "color": "hearts"}
+    h_j = {"face": "\033[1;32;49m🂻\033", "value": 11, "color": "hearts"}
+    h_q = {"face": "\033[1;32;49m🂽\033", "value": 12, "color": "hearts"}
+    h_k = {"face": "\033[1;32;49m🂾\033", "value": 13, "color": "hearts"}
 
-    d_a = {"face": "\033[1;33;40m🃁\033", "value": 1, "color": "diamonds"}
-    d_2 = {"face": "\033[1;33;40m🃂\033", "value": 2, "color": "diamonds"}
-    d_3 = {"face": "\033[1;33;40m🃃\033", "value": 3, "color": "diamonds"}
-    d_4 = {"face": "\033[1;33;40m🃄\033", "value": 4, "color": "diamonds"}
-    d_5 = {"face": "\033[1;33;40m🃅\033", "value": 5, "color": "diamonds"}
-    d_6 = {"face": "\033[1;33;40m🃆\033", "value": 6, "color": "diamonds"}
-    d_7 = {"face": "\033[1;33;40m🃇\033", "value": 7, "color": "diamonds"}
-    d_8 = {"face": "\033[1;33;40m🃈\033", "value": 8, "color": "diamonds"}
-    d_9 = {"face": "\033[1;33;40m🃉\033", "value": 9, "color": "diamonds"}
-    d_10 = {"face": "\033[1;33;40m🃊\033", "value": 10, "color": "diamonds"}
-    d_j = {"face": "\033[1;33;40m🃋\033", "value": 11, "color": "diamonds"}
-    d_q = {"face": "\033[1;33;40m🃍\033", "value": 12, "color": "diamonds"}
-    d_k = {"face": "\033[1;33;40m🃎\033", "value": 13, "color": "diamonds"}
+    d_a = {"face": "\033[1;33;49m🃁\033", "value": 1, "color": "diamonds"}
+    d_2 = {"face": "\033[1;33;49m🃂\033", "value": 2, "color": "diamonds"}
+    d_3 = {"face": "\033[1;33;49m🃃\033", "value": 3, "color": "diamonds"}
+    d_4 = {"face": "\033[1;33;49m🃄\033", "value": 4, "color": "diamonds"}
+    d_5 = {"face": "\033[1;33;49m🃅\033", "value": 5, "color": "diamonds"}
+    d_6 = {"face": "\033[1;33;49m🃆\033", "value": 6, "color": "diamonds"}
+    d_7 = {"face": "\033[1;33;49m🃇\033", "value": 7, "color": "diamonds"}
+    d_8 = {"face": "\033[1;33;49m🃈\033", "value": 8, "color": "diamonds"}
+    d_9 = {"face": "\033[1;33;49m🃉\033", "value": 9, "color": "diamonds"}
+    d_10 = {"face": "\033[1;33;49m🃊\033", "value": 10, "color": "diamonds"}
+    d_j = {"face": "\033[1;33;49m🃋\033", "value": 11, "color": "diamonds"}
+    d_q = {"face": "\033[1;33;49m🃍\033", "value": 12, "color": "diamonds"}
+    d_k = {"face": "\033[1;33;49m🃎\033", "value": 13, "color": "diamonds"}
 
-    c_a = {"face": "\033[1;34;40m🃑\033", "value": 1, "color": "clubs"}
-    c_2 = {"face": "\033[1;34;40m🃒\033", "value": 2, "color": "clubs"}
-    c_3 = {"face": "\033[1;34;40m🃓\033", "value": 3, "color": "clubs"}
-    c_4 = {"face": "\033[1;34;40m🃔\033", "value": 4, "color": "clubs"}
-    c_5 = {"face": "\033[1;34;40m🃕\033", "value": 5, "color": "clubs"}
-    c_6 = {"face": "\033[1;34;40m🃖\033", "value": 6, "color": "clubs"}
-    c_7 = {"face": "\033[1;34;40m🃗\033", "value": 7, "color": "clubs"}
-    c_8 = {"face": "\033[1;34;40m🃘\033", "value": 8, "color": "clubs"}
-    c_9 = {"face": "\033[1;34;40m🃙\033", "value": 9, "color": "clubs"}
-    c_10 = {"face": "\033[1;34;40m🃚\033", "value": 10, "color": "clubs"}
-    c_j = {"face": "\033[1;34;40m🃛\033", "value": 11, "color": "clubs"}
-    c_q = {"face": "\033[1;34;40m🃝\033", "value": 12, "color": "clubs"}
-    c_k = {"face": "\033[1;34;40m🃞\033", "value": 13, "color": "clubs"}
+    c_a = {"face": "\033[1;34;49m🃑\033", "value": 1, "color": "clubs"}
+    c_2 = {"face": "\033[1;34;49m🃒\033", "value": 2, "color": "clubs"}
+    c_3 = {"face": "\033[1;34;49m🃓\033", "value": 3, "color": "clubs"}
+    c_4 = {"face": "\033[1;34;49m🃔\033", "value": 4, "color": "clubs"}
+    c_5 = {"face": "\033[1;34;49m🃕\033", "value": 5, "color": "clubs"}
+    c_6 = {"face": "\033[1;34;49m🃖\033", "value": 6, "color": "clubs"}
+    c_7 = {"face": "\033[1;34;49m🃗\033", "value": 7, "color": "clubs"}
+    c_8 = {"face": "\033[1;34;49m🃘\033", "value": 8, "color": "clubs"}
+    c_9 = {"face": "\033[1;34;49m🃙\033", "value": 9, "color": "clubs"}
+    c_10 = {"face": "\033[1;34;49m🃚\033", "value": 10, "color": "clubs"}
+    c_j = {"face": "\033[1;34;49m🃛\033", "value": 11, "color": "clubs"}
+    c_q = {"face": "\033[1;34;49m🃝\033", "value": 12, "color": "clubs"}
+    c_k = {"face": "\033[1;34;49m🃞\033", "value": 13, "color": "clubs"}
 
     deck = [s_a, s_2, s_3, s_4, s_5, s_6, s_7, s_8, s_9, s_10, s_j, s_q, s_k,
             h_a, h_2, h_3, h_4, h_5, h_6, h_7, h_8, h_9, h_10, h_j, h_q, h_k,
@@ -103,7 +103,7 @@ def cards():           # creates card dictionary
 
 
 def hold(hand, deck):
-    cards_to_hold = str(input(" Which card(s) to hold? (1-5): "))
+    cards_to_hold = str(input("Which card(s) to hold? (1-5): "))
     hold_list = []
     for i in cards_to_hold:
         hold_list.append(int(i))
