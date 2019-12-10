@@ -21,8 +21,21 @@ def two_pair():
     pass
 
 
-def three_of_a_kind():
-    pass
+def three_of_a_kind(hand):
+    three_of_a_kind = []
+    for i in range(5):
+        first_card = hand[i]
+        for j in range(5):
+            second_card = hand[j]
+            for k in range(5):
+                third_card = hand[k]
+                if i != j and j != k and i != k:
+                    if first_card["value"] == second_card["value"] and second_card["value"] == third_card["value"] and first_card["value"] == third_card["value"]:
+                        if first_card not in three_of_a_kind and second_card not in three_of_a_kind:
+                            three_of_a_kind.append(first_card)
+                            three_of_a_kind.append(second_card)
+                            three_of_a_kind.append(three_of_a_kind)
+                            print("THREE OF A KIND")
 
 
 def straight():
@@ -144,6 +157,7 @@ def main():
     for card in hand:
         print(card["face"], end=" ")
     print("\n")
+    three_of_a_kind(hand)
     one_pair(hand)
     while True:
         new_hand = hold(hand, deck)
@@ -152,8 +166,8 @@ def main():
         for card in new_hand:
             print(card["face"], end=" ")
         print("\n")
+        three_of_a_kind(hand)
         one_pair(hand)
-
 
 if __name__ == "__main__":
     main()
