@@ -1,12 +1,14 @@
 import random
 
 
-def one_pair(dealt_cards):         # Jack or better, returns boolean
-    # for card in dealt_cards:
-    #     for kard in dealt_cards:
-    #         if card["value"] == kard["value"]:
-    #             print("one pair")
-    pass
+def one_pair(hand):         # Jack or better, returns boolean
+    for i in range(4):
+        first_card = hand[i]
+        for j in range(1, 5):
+            second_card = hand[j]
+            if i != j:
+                if first_card["value"] == second_card["value"]:
+                    print("ONE PAIR")
 
 
 def two_pair():
@@ -135,11 +137,12 @@ def main():
     hand = deal(deck, hold_lst)
     for card in hand:
         print(card["face"])
+    one_pair(hand)
     while True:
-        x = hold(hand, deck)
-        for card in x:
+        new_hand = hold(hand, deck)
+        for card in new_hand:
             print(card["face"])
-
+        one_pair(hand)
 
 if __name__ == "__main__":
     main()
