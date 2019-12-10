@@ -137,9 +137,9 @@ def deal(deck, hold_list):                # deals 5 unique cards
 
 
 def main():
-    hold_lst = []
+    hold_list = []
     deck = cards()
-    hand = deal(deck, hold_lst)
+    hand = deal(deck, hold_list)
     for card in hand:
         print(card["face"])
     one_pair(hand)
@@ -148,6 +148,7 @@ def main():
         for card in new_hand:
             print(card["face"])
         one_pair(hand)
+
 
 if __name__ == "__main__":
     main()
