@@ -1,7 +1,11 @@
 import random
 
 
-def one_pair():         # Jack or better, returns boolean
+def one_pair(dealt_cards):         # Jack or better, returns boolean
+    # for card in dealt_cards:
+    #     for kard in dealt_cards:
+    #         if card["value"] == kard["value"]:
+    #             print("one pair")
     pass
 
 
@@ -37,89 +41,104 @@ def royal_flush():
     pass
 
 
-def card_generator():           # creates card dictionary
-    s_a = {"face": "🂡", "value": 1}
-    s_2 = {"face": "🂢", "value": 2}
-    s_3 = {"face": "🂣", "value": 3}
-    s_4 = {"face": "🂤", "value": 4}
-    s_5 = {"face": "🂥", "value": 5}
-    s_6 = {"face": "🂦", "value": 6}
-    s_7 = {"face": "🂧", "value": 7}
-    s_8 = {"face": "🂨", "value": 8}
-    s_9 = {"face": "🂩", "value": 9}
-    s_10 = {"face": "🂪", "value": 10}
-    s_j = {"face": "🂫", "value": 11}
-    s_q = {"face": "🂭", "value": 12}
-    s_k = {"face": "🂮", "value": 13}
+def cards():           # creates card dictionary
+    s_a = {"face": "\033[1;31;40m🂡\033", "value": 1, "color": "spades"}
+    s_2 = {"face": "\033[1;31;40m🂢\033", "value": 2, "color": "spades"}
+    s_3 = {"face": "\033[1;31;40m🂣\033", "value": 3, "color": "spades"}
+    s_4 = {"face": "\033[1;31;40m🂤\033", "value": 4, "color": "spades"}
+    s_5 = {"face": "\033[1;31;40m🂥\033", "value": 5, "color": "spades"}
+    s_6 = {"face": "\033[1;31;40m🂦\033", "value": 6, "color": "spades"}
+    s_7 = {"face": "\033[1;31;40m🂧\033", "value": 7, "color": "spades"}
+    s_8 = {"face": "\033[1;31;40m🂨\033", "value": 8, "color": "spades"}
+    s_9 = {"face": "\033[1;31;40m🂩\033", "value": 9, "color": "spades"}
+    s_10 = {"face": "\033[1;31;40m🂪\033", "value": 10, "color": "spades"}
+    s_j = {"face": "\033[1;31;40m🂫\033", "value": 11, "color": "spades"}
+    s_q = {"face": "\033[1;31;40m🂭\033", "value": 12, "color": "spades"}
+    s_k = {"face": "\033[1;31;40m🂮\033", "value": 13, "color": "spades"}
 
-    h_a = {"face": "🂱", "value": 1}
-    h_2 = {"face": "🂲", "value": 2}
-    h_3 = {"face": "🂳", "value": 3}
-    h_4 = {"face": "🂴", "value": 4}
-    h_5 = {"face": "🂵", "value": 5}
-    h_6 = {"face": "🂶", "value": 6}
-    h_7 = {"face": "🂷", "value": 7}
-    h_8 = {"face": "🂸", "value": 8}
-    h_9 = {"face": "🂹", "value": 9}
-    h_10 = {"face": "🂺", "value": 10}
-    h_j = {"face": "🂻", "value": 11}
-    h_q = {"face": "🂽", "value": 12}
-    h_k = {"face": "🂾", "value": 13}
+    h_a = {"face": "\033[1;32;40m🂱\033", "value": 1, "color": "hearts"}
+    h_2 = {"face": "\033[1;32;40m🂲\033", "value": 2, "color": "hearts"}
+    h_3 = {"face": "\033[1;32;40m🂳\033", "value": 3, "color": "hearts"}
+    h_4 = {"face": "\033[1;32;40m🂴\033", "value": 4, "color": "hearts"}
+    h_5 = {"face": "\033[1;32;40m🂵\033", "value": 5, "color": "hearts"}
+    h_6 = {"face": "\033[1;32;40m🂶\033", "value": 6, "color": "hearts"}
+    h_7 = {"face": "\033[1;32;40m🂷\033", "value": 7, "color": "hearts"}
+    h_8 = {"face": "\033[1;32;40m🂸\033", "value": 8, "color": "hearts"}
+    h_9 = {"face": "\033[1;32;40m🂹\033", "value": 9, "color": "hearts"}
+    h_10 = {"face": "\033[1;32;40m🂺\033", "value": 10, "color": "hearts"}
+    h_j = {"face": "\033[1;32;40m🂻\033", "value": 11, "color": "hearts"}
+    h_q = {"face": "\033[1;32;40m🂽\033", "value": 12, "color": "hearts"}
+    h_k = {"face": "\033[1;32;40m🂾\033", "value": 13, "color": "hearts"}
 
-    d_a = {"face": "🃁", "value": 1}
-    d_2 = {"face": "🃂", "value": 2}
-    d_3 = {"face": "🃃", "value": 3}
-    d_4 = {"face": "🃄", "value": 4}
-    d_5 = {"face": "🃅", "value": 5}
-    d_6 = {"face": "🃆", "value": 6}
-    d_7 = {"face": "🃇", "value": 7}
-    d_8 = {"face": "🃈", "value": 8}
-    d_9 = {"face": "🃉", "value": 9}
-    d_10 = {"face": "🃊", "value": 10}
-    d_j = {"face": "🃋", "value": 11}
-    d_q = {"face": "🃍", "value": 12}
-    d_k = {"face": "🃎", "value": 13}
+    d_a = {"face": "\033[1;33;40m🃁\033", "value": 1, "color": "diamonds"}
+    d_2 = {"face": "\033[1;33;40m🃂\033", "value": 2, "color": "diamonds"}
+    d_3 = {"face": "\033[1;33;40m🃃\033", "value": 3, "color": "diamonds"}
+    d_4 = {"face": "\033[1;33;40m🃄\033", "value": 4, "color": "diamonds"}
+    d_5 = {"face": "\033[1;33;40m🃅\033", "value": 5, "color": "diamonds"}
+    d_6 = {"face": "\033[1;33;40m🃆\033", "value": 6, "color": "diamonds"}
+    d_7 = {"face": "\033[1;33;40m🃇\033", "value": 7, "color": "diamonds"}
+    d_8 = {"face": "\033[1;33;40m🃈\033", "value": 8, "color": "diamonds"}
+    d_9 = {"face": "\033[1;33;40m🃉\033", "value": 9, "color": "diamonds"}
+    d_10 = {"face": "\033[1;33;40m🃊\033", "value": 10, "color": "diamonds"}
+    d_j = {"face": "\033[1;33;40m🃋\033", "value": 11, "color": "diamonds"}
+    d_q = {"face": "\033[1;33;40m🃍\033", "value": 12, "color": "diamonds"}
+    d_k = {"face": "\033[1;33;40m🃎\033", "value": 13, "color": "diamonds"}
 
-    c_a = {"face": "🃑", "value": 1}
-    c_2 = {"face": "🃒", "value": 2}
-    c_3 = {"face": "🃓", "value": 3}
-    c_4 = {"face": "🃔", "value": 4}
-    c_5 = {"face": "🃕", "value": 5}
-    c_6 = {"face": "🃖", "value": 6}
-    c_7 = {"face": "🃗", "value": 7}
-    c_8 = {"face": "🃘", "value": 8}
-    c_9 = {"face": "🃙", "value": 9}
-    c_10 = {"face": "🃚", "value": 10}
-    c_j = {"face": "🃛", "value": 11}
-    c_q = {"face": "🃝", "value": 12}
-    c_k = {"face": "🃞", "value": 13}
+    c_a = {"face": "\033[1;34;40m🃑\033", "value": 1, "color": "clubs"}
+    c_2 = {"face": "\033[1;34;40m🃒\033", "value": 2, "color": "clubs"}
+    c_3 = {"face": "\033[1;34;40m🃓\033", "value": 3, "color": "clubs"}
+    c_4 = {"face": "\033[1;34;40m🃔\033", "value": 4, "color": "clubs"}
+    c_5 = {"face": "\033[1;34;40m🃕\033", "value": 5, "color": "clubs"}
+    c_6 = {"face": "\033[1;34;40m🃖\033", "value": 6, "color": "clubs"}
+    c_7 = {"face": "\033[1;34;40m🃗\033", "value": 7, "color": "clubs"}
+    c_8 = {"face": "\033[1;34;40m🃘\033", "value": 8, "color": "clubs"}
+    c_9 = {"face": "\033[1;34;40m🃙\033", "value": 9, "color": "clubs"}
+    c_10 = {"face": "\033[1;34;40m🃚\033", "value": 10, "color": "clubs"}
+    c_j = {"face": "\033[1;34;40m🃛\033", "value": 11, "color": "clubs"}
+    c_q = {"face": "\033[1;34;40m🃝\033", "value": 12, "color": "clubs"}
+    c_k = {"face": "\033[1;34;40m🃞\033", "value": 13, "color": "clubs"}
 
-    cards = [s_a, s_2, s_3, s_4, s_5, s_6, s_7, s_8, s_9, s_10, s_j, s_q, s_k,
-             h_a, h_2, h_3, h_4, h_5, h_6, h_7, h_8, h_9, h_10, h_j, h_q, h_k,
-             d_a, d_2, d_3, d_4, d_5, d_6, d_7, d_8, d_9, d_10, d_j, d_q, d_k,
-             c_a, c_2, c_3, c_4, c_5, c_6, c_7, c_8, c_9, c_10, c_j, c_q, c_k]
+    deck = [s_a, s_2, s_3, s_4, s_5, s_6, s_7, s_8, s_9, s_10, s_j, s_q, s_k,
+            h_a, h_2, h_3, h_4, h_5, h_6, h_7, h_8, h_9, h_10, h_j, h_q, h_k,
+            d_a, d_2, d_3, d_4, d_5, d_6, d_7, d_8, d_9, d_10, d_j, d_q, d_k,
+            c_a, c_2, c_3, c_4, c_5, c_6, c_7, c_8, c_9, c_10, c_j, c_q, c_k]
 
-    return cards
-
-
-# def hand_check(hand):
-#     for card in hand:
+    return deck
 
 
-def deal(cards):                # deals 5 unique cards
-    dealt_cards = []
+def hold(hand, deck):
+    cards_to_hold = str(input(" Which card(s) to hold? (1-5): "))
+    hold_list = []
+    for i in cards_to_hold:
+        hold_list.append(int(i))
     for i in range(5):
-        current_card = random.choice(cards)
+        j = i + 1
+        if j not in hold_list:
+            current_card = random.choice(deck)
+            if current_card not in hand:
+                hand[i] = current_card
+    return hand
+
+
+def deal(deck, hold_list):                # deals 5 unique cards
+    dealt_cards = []
+    while len(dealt_cards) != 5:
+        current_card = random.choice(deck)
         if current_card not in dealt_cards:
             dealt_cards.append(current_card)
     return dealt_cards
 
 
 def main():
-    cards = card_generator()
-    hand = deal(cards)
+    hold_lst = []
+    deck = cards()
+    hand = deal(deck, hold_lst)
     for card in hand:
         print(card["face"])
+    while True:
+        x = hold(hand, deck)
+        for card in x:
+            print(card["face"])
 
 
 if __name__ == "__main__":
